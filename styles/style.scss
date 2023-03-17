@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:ital,wght@1,500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -15,6 +17,12 @@
     flex-direction: column;
     gap: 20px;
 
+    h1{
+        // font-family: 'Playfair Display', serif;
+        font-family: 'Dancing Script', cursive;
+        font-weight: 700;
+        letter-spacing: 0.2rem;
+    }
     .gallery {
         display: flex;
         justify-content: center;
@@ -26,6 +34,7 @@
             margin: 5px;
             border: 0.5px solid lightgray;
             border-radius: 50px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
             background: url(../img/img-1.jpg);
             background-position: center;
             background-size: cover;
@@ -34,6 +43,9 @@
             transition: width 0.4s;
 
             h2 {
+                font-family: 'Playfair Display', serif;
+                letter-spacing: 0.2rem;
+                font-weight: 500;
                 opacity: 0;
                 position: absolute;
                 bottom: 0;
@@ -68,6 +80,16 @@
                 opacity: 1;
                 bottom: 10%;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .img-box{
+        height: 300px;
+
+        &:hover{
+            width: 220px !important;
         }
     }
 }
