@@ -8,7 +8,7 @@
 .container {
   height: 100vh;
   width: 100%;
-  background-color: #eef7ff;
+  background-color: #F9F9F9;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,12 +36,13 @@
 .container .gallery .img-box h2 {
   opacity: 0;
   position: absolute;
-  bottom: 10%;
+  bottom: 0;
   left: 10%;
   width: 100%;
   background-color: rgba(238, 247, 255, 0.5882352941);
   padding: 2% 5%;
   border-radius: 8px 0 0 8px;
+  transition: bottom 0.4s, opacity;
 }
 .container .gallery .img-box:nth-child(2) {
   background: url(../img/img\ \(2\).jpg);
@@ -63,4 +64,5 @@
 }
 .container .gallery .img-box:hover h2 {
   opacity: 1;
+  bottom: 10%;
 }/*# sourceMappingURL=style.css.map */
