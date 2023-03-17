@@ -84,4 +84,20 @@
   .img-box:hover {
     width: 220px !important;
   }
+}
+@media screen and (max-width: 450px) {
+  h1 {
+    font-size: 1.2rem !important;
+  }
+  h2 {
+    font-size: 0.9rem !important;
+  }
+  .img-box {
+    width: 50px !important;
+    height: 200px !important;
+    border-radius: 20px !important;
+  }
+  .img-box:hover {
+    width: 110px !important;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -17,12 +17,13 @@
     flex-direction: column;
     gap: 20px;
 
-    h1{
+    h1 {
         // font-family: 'Playfair Display', serif;
         font-family: 'Dancing Script', cursive;
         font-weight: 700;
         letter-spacing: 0.2rem;
     }
+
     .gallery {
         display: flex;
         justify-content: center;
@@ -62,21 +63,24 @@
                 background-position: center;
                 background-size: cover;
             }
+
             &:nth-child(3) {
                 background: url(../img/img\ \(3\).jpg);
                 background-position: center;
                 background-size: cover;
             }
+
             &:nth-child(4) {
                 background: url(../img/img\ \(4\).jpg);
                 background-position: center;
                 background-size: cover;
             }
 
-            &:hover{
+            &:hover {
                 width: 300px;
             }
-            &:hover h2{
+
+            &:hover h2 {
                 opacity: 1;
                 bottom: 10%;
             }
@@ -85,11 +89,29 @@
 }
 
 @media screen and (max-width: 600px) {
-    .img-box{
+    .img-box {
         height: 300px;
 
-        &:hover{
+        &:hover {
             width: 220px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    h1{
+        font-size: 1.2rem !important;
+    }
+    h2{
+        font-size: 0.9rem !important;
+    }
+    .img-box {
+        width: 50px !important;
+        height: 200px !important;
+        border-radius: 20px !important;
+
+        &:hover {
+            width: 110px !important;
         }
     }
 }
